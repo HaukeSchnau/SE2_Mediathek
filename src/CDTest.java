@@ -49,6 +49,15 @@ public class CDTest
                 _cd1.equals(_cd1));
     }
 
+    @Test
+    public void testGetFormatiertenString()
+    {
+        String formatierterString = CD_BEZEICHNUNG + ":\n" + "    " + "Titel: " + TITEL + "\n" + "    "
+                + "Kommentar: " + KOMMENTAR + "\n" + "    " + "Interpret: " + INTERPRET + "\n" + "    " + "Laenge: "
+                + LAENGE + "\n";
+        assertEquals(formatierterString, _cd1.getFormatiertenString());
+    }
+
     private CD getMedium()
     {
         return new CD(TITEL, KOMMENTAR, INTERPRET, LAENGE);

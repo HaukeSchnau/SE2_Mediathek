@@ -55,6 +55,39 @@ class MedienDetailAnzeigerWerkzeug
         }
     }
 
+//    /**
+//     * Setzt die Liste der Medien deren Details angezeigt werden sollen.
+//     *
+//     * @param medien Eine Liste von Medien.
+//     *
+//     * @require (medien != null)
+//     */
+//    public void setMedien(List<Medium> medien)
+//    {
+//        assert medien != null : "Vorbedingung verletzt: (medien != null)";
+//        JTextArea selectedMedienTextArea = _ui.getMedienAnzeigerTextArea();
+//        selectedMedienTextArea.setText("");
+//        for (Medium medium : medien)
+//        {
+//            if (medium instanceof CD)
+//            {
+//                CD cd = (CD) medium;
+//                selectedMedienTextArea.append(cd.getFormatiertenString());
+//
+//            }
+//            else if (medium instanceof DVD)
+//            {
+//                DVD dvd = (DVD) medium;
+//                selectedMedienTextArea.append(dvd.getFormatiertenString());
+//            }
+//            else if (medium instanceof Videospiel)
+//            {
+//                Videospiel videospiel = (Videospiel) medium;
+//                selectedMedienTextArea.append(videospiel.getFormatiertenString());
+//            }
+//        }
+//    }
+
     /**
      * Gibt das Panel dieses Subwerkzeugs zurück.
      * 

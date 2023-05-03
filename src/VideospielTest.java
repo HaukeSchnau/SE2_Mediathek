@@ -46,6 +46,13 @@ public class VideospielTest {
                 _videospiel1.equals(_videospiel2));
     }
 
+    @Test
+    public void testGetFormatiertenString() {
+        String formatierterString = VIDEOSPIEL_BEZEICHNUNG + ":\n" + "    " + "Titel: " + TITEL + "\n" + "    "
+                + "Kommentar: " + KOMMENTAR + "\n" + "    " + "System: " + SYSTEM + "\n";
+        assertEquals(formatierterString, _videospiel1.getFormatiertenString());
+    }
+
     private Videospiel getMedium() {
         return new Videospiel(TITEL, KOMMENTAR, SYSTEM);
     }
