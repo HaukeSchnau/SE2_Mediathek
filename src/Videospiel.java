@@ -28,4 +28,9 @@ public class Videospiel implements Medium {
     public String getSystem() {
         return _system;
     }
+
+    public String getFormatiertenString() {
+        return getMedienBezeichnung() + ":\n" + "    " + "Titel: " + _titel + "\n" + "    " + "Kommentar: " + _kommentar
+                + "\n" + "    " + "System: " + _system + "\n";
+    }
 }
