@@ -36,22 +36,7 @@ class MedienDetailAnzeigerWerkzeug
         selectedMedienTextArea.setText("");
         for (Medium medium : medien)
         {
-            if (medium instanceof CD)
-            {
-                CD cd = (CD) medium;
-                selectedMedienTextArea.append(cd.getFormatiertenString());
-
-            }
-            else if (medium instanceof DVD)
-            {
-                DVD dvd = (DVD) medium;
-                selectedMedienTextArea.append(dvd.getFormatiertenString());
-            }
-            else if (medium instanceof Videospiel)
-            {
-                Videospiel videospiel = (Videospiel) medium;
-                selectedMedienTextArea.append(videospiel.getFormatiertenString());
-            }
+            selectedMedienTextArea.append(medium.getFormatiertenString());
         }
     }
 
